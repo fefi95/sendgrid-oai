@@ -8350,7 +8350,7 @@
                 }
             }
         },
-        "/whitelabel/links": {
+        "/v3/whitelabel/links": {
             "post": {
                 "operationId": "POST_whitelabel-links",
                 "summary": "Create a branded link",
@@ -8546,7 +8546,7 @@
                 }
             }
         },
-        "/whitelabel/links/{id}/validate": {
+        "/v3/whitelabel/links/{id}/validate": {
             "parameters": [
                 {
                     "name": "id",
@@ -8720,7 +8720,7 @@
                 }
             }
         },
-        "/whitelabel/links/{link_id}/subuser": {
+        "/v3/whitelabel/links/{link_id}/subuser": {
             "parameters": [
                 {
                     "name": "link_id",
@@ -8807,7 +8807,7 @@
                 }
             }
         },
-        "/whitelabel/links/{id}": {
+        "/v3/whitelabel/links/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -9001,7 +9001,7 @@
                 }
             }
         },
-        "/whitelabel/links/default": {
+        "/v3/whitelabel/links/default": {
             "get": {
                 "operationId": "GET_whitelabel-links-default",
                 "summary": "Retrieve the default branded link",
@@ -9072,7 +9072,7 @@
                 }
             }
         },
-        "/whitelabel/links/subuser": {
+        "/v3/whitelabel/links/subuser": {
             "get": {
                 "operationId": "GET_whitelabel-links-subuser",
                 "summary": "Retrieve a subuser's branded link",
