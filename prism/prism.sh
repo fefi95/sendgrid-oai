@@ -2,6 +2,7 @@
 set -e
 
 rm -rf prism && mkdir -p prism && cd prism
+echo "Cloning tests branch"
 git clone --depth 1 https://github.com/sendgrid/sendgrid-oai --branch tests .
 cd prism
 
