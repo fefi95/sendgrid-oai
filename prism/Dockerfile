@@ -5,4 +5,4 @@ RUN chmod +x prism
 
 EXPOSE 4010
 
-CMD ["./prism", "mock", "https://raw.githubusercontent.com/sendgrid/sendgrid-oai/HEAD/oai_stoplight.json", "--port", "4010", "-h", "0.0.0.0"]
+CMD ["./prism", "mock", "https://raw.githubusercontent.com/sendgrid/sendgrid-oai/tests/oai_stoplight.json", "--port", "4010", "-h", "0.0.0.0"]
