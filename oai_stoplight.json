@@ -24,7 +24,7 @@
         }
     },
     "paths": {
-        "/mail/send": {
+        "/v3/mail/send": {
             "post": {
                 "operationId": "POST_mail-send",
                 "summary": "v3 Mail Send",
@@ -551,7 +551,7 @@
                 }
             }
         },
-        "/mail/batch": {
+        "/v3/mail/batch": {
             "post": {
                 "operationId": "POST_mail-batch",
                 "summary": "Create a batch ID",
@@ -610,7 +610,7 @@
                 }
             }
         },
-        "/user/scheduled_sends": {
+        "/v3/user/scheduled_sends": {
             "post": {
                 "operationId": "POST_user-scheduled_sends",
                 "summary": "Cancel or pause a scheduled send",
@@ -763,7 +763,7 @@
                 }
             }
         },
-        "/mail/batch/{batch_id}": {
+        "/v3/mail/batch/{batch_id}": {
             "parameters": [
                 {
                     "name": "batch_id",
@@ -830,7 +830,7 @@
                 }
             }
         },
-        "/user/scheduled_sends/{batch_id}": {
+        "/v3/user/scheduled_sends/{batch_id}": {
             "parameters": [
                 {
                     "name": "batch_id",
@@ -1032,7 +1032,7 @@
                 }
             }
         },
-        "/api_keys": {
+        "/v3/api_keys": {
             "post": {
                 "operationId": "create-api-keys",
                 "summary": "Create API keys",
@@ -1222,7 +1222,7 @@
                 }
             }
         },
-        "/api_keys/{api_key_id}": {
+        "/v3/api_keys/{api_key_id}": {
             "parameters": [
                 {
                     "name": "api_key_id",
@@ -1523,7 +1523,7 @@
                 }
             }
         },
-        "/scopes": {
+        "/v3/scopes": {
             "get": {
                 "operationId": "GET_scopes",
                 "summary": "Retrieve a list of scopes for which this user has access.",
@@ -1634,7 +1634,7 @@
                 }
             }
         },
-        "/user/settings/enforced_tls": {
+        "/v3/user/settings/enforced_tls": {
             "get": {
                 "operationId": "GET_user-settings-enforced_tls",
                 "summary": "Retrieve current Enforced TLS settings.",
@@ -1757,7 +1757,7 @@
                 }
             }
         },
-        "/access_settings/whitelist": {
+        "/v3/access_settings/whitelist": {
             "post": {
                 "operationId": "POST_access_settings-whitelist",
                 "summary": "Add one or more IPs to the allow list",
@@ -2019,7 +2019,7 @@
                 }
             }
         },
-        "/access_settings/activity": {
+        "/v3/access_settings/activity": {
             "get": {
                 "operationId": "GET_access_settings-activity",
                 "summary": "Retrieve all recent access attempts",
@@ -2145,7 +2145,7 @@
                 }
             }
         },
-        "/access_settings/whitelist/{rule_id}": {
+        "/v3/access_settings/whitelist/{rule_id}": {
             "parameters": [
                 {
                     "name": "rule_id",
@@ -2239,7 +2239,7 @@
                 }
             }
         },
-        "/sso/certificates": {
+        "/v3/sso/certificates": {
             "post": {
                 "operationId": "POST_sso-certificates",
                 "summary": "Create an SSO Certificate",
@@ -2325,7 +2325,7 @@
                 }
             }
         },
-        "/sso/integrations/{integration_id}/certificates": {
+        "/v3/sso/integrations/{integration_id}/certificates": {
             "parameters": [
                 {
                     "name": "integration_id",
@@ -2392,7 +2392,7 @@
                 }
             }
         },
-        "/sso/certificates/{cert_id}": {
+        "/v3/sso/certificates/{cert_id}": {
             "parameters": [
                 {
                     "name": "cert_id",
@@ -2568,7 +2568,7 @@
                 }
             }
         },
-        "/sso/integrations": {
+        "/v3/sso/integrations": {
             "post": {
                 "operationId": "POST_sso-integrations",
                 "summary": "Create an SSO Integration",
@@ -2709,7 +2709,7 @@
                 }
             }
         },
-        "/sso/integrations/{id}": {
+        "/v3/sso/integrations/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -2900,7 +2900,7 @@
                 }
             }
         },
-        "/sso/teammates": {
+        "/v3/sso/teammates": {
             "post": {
                 "operationId": "POST_sso-teammates",
                 "summary": "Create SSO Teammate",
@@ -2975,7 +2975,7 @@
                 }
             }
         },
-        "/sso/teammates/{username}": {
+        "/v3/sso/teammates/{username}": {
             "parameters": [
                 {
                     "name": "username",
@@ -3086,7 +3086,7 @@
                 }
             }
         },
-        "/mail_settings": {
+        "/v3/mail_settings": {
             "get": {
                 "operationId": "GET_mail_settings",
                 "summary": "Retrieve all mail settings",
@@ -3248,7 +3248,7 @@
                 }
             }
         },
-        "/mail_settings/address_whitelist": {
+        "/v3/mail_settings/address_whitelist": {
             "patch": {
                 "operationId": "PATCH_mail_settings-address_whitelist",
                 "summary": "Update address whitelist mail settings",
@@ -3398,7 +3398,7 @@
                 }
             }
         },
-        "/mail_settings/footer": {
+        "/v3/mail_settings/footer": {
             "patch": {
                 "operationId": "PATCH_mail_settings-footer",
                 "summary": "Update footer mail settings",
@@ -3530,7 +3530,7 @@
                 }
             }
         },
-        "/mail_settings/forward_spam": {
+        "/v3/mail_settings/forward_spam": {
             "patch": {
                 "operationId": "PATCH_mail_settings-forward_spam",
                 "summary": "Update forward spam mail settings",
@@ -3659,7 +3659,7 @@
                 }
             }
         },
-        "/mail_settings/template": {
+        "/v3/mail_settings/template": {
             "patch": {
                 "operationId": "PATCH_mail_settings-template",
                 "summary": "Update template mail settings",
@@ -3812,7 +3812,7 @@
                 }
             }
         },
-        "/mail_settings/bounce_purge": {
+        "/v3/mail_settings/bounce_purge": {
             "patch": {
                 "operationId": "PATCH_mail_settings-bounce_purge",
                 "summary": "Update bounce purge mail settings",
@@ -3944,7 +3944,7 @@
                 }
             }
         },
-        "/mail_settings/forward_bounce": {
+        "/v3/mail_settings/forward_bounce": {
             "patch": {
                 "operationId": "PATCH_mail_settings-forward_bounce",
                 "summary": "Update forward bounce mail settings",
@@ -4073,7 +4073,7 @@
                 }
             }
         },
-        "/partner_settings/new_relic": {
+        "/v3/partner_settings/new_relic": {
             "patch": {
                 "operationId": "PATCH_partner_settings-new_relic",
                 "summary": "Updates New Relic partner settings.",
@@ -4189,7 +4189,7 @@
                 }
             }
         },
-        "/partner_settings": {
+        "/v3/partner_settings": {
             "get": {
                 "operationId": "GET_partner_settings",
                 "summary": "Returns a list of all partner settings.",
@@ -4284,7 +4284,7 @@
                 }
             }
         },
-        "/teammates": {
+        "/v3/teammates": {
             "post": {
                 "operationId": "POST_v3-teammates",
                 "summary": "Invite teammate",
@@ -4597,7 +4597,7 @@
                 }
             }
         },
-        "/teammates/pending/{token}/resend": {
+        "/v3/teammates/pending/{token}/resend": {
             "parameters": [
                 {
                     "name": "token",
@@ -4709,7 +4709,7 @@
                 }
             }
         },
-        "/scopes/requests": {
+        "/v3/scopes/requests": {
             "get": {
                 "operationId": "GET_v3-scopes-requests",
                 "summary": "Retrieve access requests",
@@ -4808,7 +4808,7 @@
                 }
             }
         },
-        "/teammates/pending": {
+        "/v3/teammates/pending": {
             "get": {
                 "operationId": "GET_v3-teammates-pending",
                 "summary": "Retrieve all pending teammates",
@@ -4903,7 +4903,7 @@
                 }
             }
         },
-        "/teammates/{username}": {
+        "/v3/teammates/{username}": {
             "parameters": [
                 {
                     "name": "username",
@@ -5353,7 +5353,7 @@
                 }
             }
         },
-        "/scopes/requests/{request_id}/approve": {
+        "/v3/scopes/requests/{request_id}/approve": {
             "parameters": [
                 {
                     "name": "request_id",
@@ -5435,7 +5435,7 @@
                 }
             }
         },
-        "/scopes/requests/{request_id}": {
+        "/v3/scopes/requests/{request_id}": {
             "parameters": [
                 {
                     "name": "request_id",
@@ -5510,7 +5510,7 @@
                 }
             }
         },
-        "/teammates/pending/{token}": {
+        "/v3/teammates/pending/{token}": {
             "parameters": [
                 {
                     "name": "token",
@@ -5577,7 +5577,7 @@
                 }
             }
         },
-        "/alerts": {
+        "/v3/alerts": {
             "post": {
                 "operationId": "POST_alerts",
                 "summary": "Create a new Alert",
@@ -5839,7 +5839,7 @@
                 }
             }
         },
-        "/alerts/{alert_id}": {
+        "/v3/alerts/{alert_id}": {
             "parameters": [
                 {
                     "name": "alert_id",
@@ -6093,7 +6093,7 @@
                 }
             }
         },
-        "/user/profile": {
+        "/v3/user/profile": {
             "get": {
                 "operationId": "GET_user-profile",
                 "summary": "Get a user's profile",
@@ -6285,7 +6285,7 @@
                 }
             }
         },
-        "/user/account": {
+        "/v3/user/account": {
             "get": {
                 "operationId": "GET_user-account",
                 "summary": "Get a user's account information.",
@@ -6349,7 +6349,7 @@
                 }
             }
         },
-        "/user/email": {
+        "/v3/user/email": {
             "get": {
                 "operationId": "GET_user-email",
                 "summary": "Retrieve your account email address",
@@ -6471,7 +6471,7 @@
                 }
             }
         },
-        "/user/username": {
+        "/v3/user/username": {
             "get": {
                 "operationId": "GET_user-username",
                 "summary": "Retrieve your username",
@@ -6597,7 +6597,7 @@
                 }
             }
         },
-        "/user/credits": {
+        "/v3/user/credits": {
             "get": {
                 "operationId": "GET_user-credits",
                 "summary": "Retrieve your credit balance",
@@ -6686,7 +6686,7 @@
                 }
             }
         },
-        "/user/password": {
+        "/v3/user/password": {
             "put": {
                 "operationId": "PUT_user-password",
                 "summary": "Update your password",
@@ -6751,7 +6751,7 @@
                 }
             }
         },
-        "/subusers": {
+        "/v3/subusers": {
             "get": {
                 "operationId": "GET_subusers",
                 "summary": "List all Subusers",
@@ -6995,7 +6995,7 @@
                 }
             }
         },
-        "/subusers/{subuser_name}": {
+        "/v3/subusers/{subuser_name}": {
             "parameters": [
                 {
                     "name": "subuser_name",
@@ -7154,7 +7154,7 @@
                 }
             }
         },
-        "/subusers/reputations": {
+        "/v3/subusers/reputations": {
             "get": {
                 "operationId": "GET_subusers-reputations",
                 "summary": "Retrieve Subuser Reputations",
@@ -7224,7 +7224,7 @@
                 }
             }
         },
-        "/subusers/{subuser_name}/ips": {
+        "/v3/subusers/{subuser_name}/ips": {
             "parameters": [
                 {
                     "name": "subuser_name",
@@ -7316,7 +7316,7 @@
                 }
             }
         },
-        "/subusers/{subuser_name}/monitor": {
+        "/v3/subusers/{subuser_name}/monitor": {
             "parameters": [
                 {
                     "name": "subuser_name",
@@ -7624,7 +7624,7 @@
                 }
             }
         },
-        "/subusers/{subuser_name}/stats/monthly": {
+        "/v3/subusers/{subuser_name}/stats/monthly": {
             "parameters": [
                 {
                     "name": "subuser_name",
@@ -7742,7 +7742,7 @@
                 }
             }
         },
-        "/subusers/stats/monthly": {
+        "/v3/subusers/stats/monthly": {
             "get": {
                 "operationId": "GET_subusers-stats-monthly",
                 "summary": "Retrieve monthly stats for all subusers",
@@ -7894,7 +7894,7 @@
                 }
             }
         },
-        "/subusers/stats/sums": {
+        "/v3/subusers/stats/sums": {
             "get": {
                 "operationId": "GET_subusers-stats-sums",
                 "summary": "Retrieve the totals for each email statistic metric for all subusers.",
@@ -7993,7 +7993,7 @@
                 }
             }
         },
-        "/subusers/stats": {
+        "/v3/subusers/stats": {
             "get": {
                 "operationId": "GET_subusers-stats",
                 "summary": "Retrieve email statistics for your subusers.",
@@ -8350,7 +8350,7 @@
                 }
             }
         },
-        "/v3/whitelabel/links": {
+        "/v3/v3/whitelabel/links": {
             "post": {
                 "operationId": "POST_whitelabel-links",
                 "summary": "Create a branded link",
@@ -8546,7 +8546,7 @@
                 }
             }
         },
-        "/v3/whitelabel/links/{id}/validate": {
+        "/v3/v3/whitelabel/links/{id}/validate": {
             "parameters": [
                 {
                     "name": "id",
@@ -8720,7 +8720,7 @@
                 }
             }
         },
-        "/v3/whitelabel/links/{link_id}/subuser": {
+        "/v3/v3/whitelabel/links/{link_id}/subuser": {
             "parameters": [
                 {
                     "name": "link_id",
@@ -8807,7 +8807,7 @@
                 }
             }
         },
-        "/v3/whitelabel/links/{id}": {
+        "/v3/v3/whitelabel/links/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -9182,7 +9182,7 @@
                 }
             }
         },
-        "/ips/warmup": {
+        "/v3/ips/warmup": {
             "post": {
                 "operationId": "POST_ips-warmup",
                 "summary": "Start warming up an IP address",
@@ -9316,7 +9316,7 @@
                 }
             }
         },
-        "/ips/warmup/{ip_address}": {
+        "/v3/ips/warmup/{ip_address}": {
             "parameters": [
                 {
                     "name": "ip_address",
@@ -9467,7 +9467,7 @@
                 }
             }
         },
-        "/whitelabel/ips": {
+        "/v3/whitelabel/ips": {
             "post": {
                 "operationId": "POST_whitelabel-ips",
                 "summary": "Set up reverse DNS",
@@ -9666,7 +9666,7 @@
                 }
             }
         },
-        "/whitelabel/ips/{id}/validate": {
+        "/v3/whitelabel/ips/{id}/validate": {
             "parameters": [
                 {
                     "name": "id",
@@ -9847,7 +9847,7 @@
                 }
             }
         },
-        "/whitelabel/ips/{id}": {
+        "/v3/whitelabel/ips/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -9955,7 +9955,7 @@
                 }
             }
         },
-        "/validations/email": {
+        "/v3/validations/email": {
             "post": {
                 "operationId": "POST_validations-email",
                 "summary": "Validate an email",
@@ -10164,7 +10164,7 @@
                 }
             }
         },
-        "/whitelabel/dns/email": {
+        "/v3/whitelabel/dns/email": {
             "post": {
                 "operationId": "POST_whitelabel-dns-email",
                 "summary": "Email DNS records to a co-worker",
@@ -10256,7 +10256,7 @@
                 }
             }
         },
-        "/ips/pools": {
+        "/v3/ips/pools": {
             "post": {
                 "operationId": "POST_ips-pools",
                 "summary": "Create an IP pool",
@@ -10362,7 +10362,7 @@
                 }
             }
         },
-        "/ips/pools/{pool_name}/ips": {
+        "/v3/ips/pools/{pool_name}/ips": {
             "parameters": [
                 {
                     "name": "pool_name",
@@ -10494,7 +10494,7 @@
                 }
             }
         },
-        "/ips/pools/{pool_name}": {
+        "/v3/ips/pools/{pool_name}": {
             "parameters": [
                 {
                     "name": "pool_name",
@@ -10733,7 +10733,7 @@
                 }
             }
         },
-        "/ips/pools/{pool_name}/ips/{ip}": {
+        "/v3/ips/pools/{pool_name}/ips/{ip}": {
             "parameters": [
                 {
                     "name": "pool_name",
@@ -10800,7 +10800,7 @@
                 }
             }
         },
-        "/ips": {
+        "/v3/ips": {
             "post": {
                 "operationId": "POST_ips",
                 "summary": "Add IPs",
@@ -11112,7 +11112,7 @@
                 }
             }
         },
-        "/ips/remaining": {
+        "/v3/ips/remaining": {
             "get": {
                 "operationId": "GET_ips-remaining",
                 "summary": "Get remaining IPs count",
@@ -11187,7 +11187,7 @@
                 }
             }
         },
-        "/ips/assigned": {
+        "/v3/ips/assigned": {
             "get": {
                 "operationId": "GET_ips-assigned",
                 "summary": "Retrieve all assigned IPs",
@@ -11264,7 +11264,7 @@
                 }
             }
         },
-        "/ips/{ip_address}": {
+        "/v3/ips/{ip_address}": {
             "parameters": [
                 {
                     "name": "ip_address",
@@ -11371,7 +11371,7 @@
                 }
             }
         },
-        "/whitelabel/domains": {
+        "/v3/whitelabel/domains": {
             "get": {
                 "operationId": "GET_whitelabel-domains",
                 "summary": "List all authenticated domains",
@@ -11644,7 +11644,7 @@
                 }
             }
         },
-        "/whitelabel/domains/{domain_id}": {
+        "/v3/whitelabel/domains/{domain_id}": {
             "parameters": [
                 {
                     "name": "domain_id",
@@ -11898,7 +11898,7 @@
                 }
             }
         },
-        "/whitelabel/domains/default": {
+        "/v3/whitelabel/domains/default": {
             "get": {
                 "operationId": "GET_whitelabel-domains-default",
                 "summary": "Get the default authentication",
@@ -11983,7 +11983,7 @@
                 }
             }
         },
-        "/whitelabel/domains/{id}/ips": {
+        "/v3/whitelabel/domains/{id}/ips": {
             "parameters": [
                 {
                     "name": "id",
@@ -12091,7 +12091,7 @@
                 }
             }
         },
-        "/whitelabel/domains/{id}/ips/{ip}": {
+        "/v3/whitelabel/domains/{id}/ips/{ip}": {
             "parameters": [
                 {
                     "name": "id",
@@ -12187,7 +12187,7 @@
                 }
             }
         },
-        "/whitelabel/domains/{id}/validate": {
+        "/v3/whitelabel/domains/{id}/validate": {
             "parameters": [
                 {
                     "name": "id",
@@ -12372,7 +12372,7 @@
                 }
             }
         },
-        "/whitelabel/domains/subuser": {
+        "/v3/whitelabel/domains/subuser": {
             "get": {
                 "operationId": "GET_whitelabel-domains-subuser",
                 "summary": "List the authenticated domain associated with the given user.",
@@ -12496,7 +12496,7 @@
                 }
             }
         },
-        "/whitelabel/domains/{domain_id}/subuser": {
+        "/v3/whitelabel/domains/{domain_id}/subuser": {
             "parameters": [
                 {
                     "name": "domain_id",
@@ -12601,7 +12601,7 @@
                 }
             }
         },
-        "/verified_senders/domains": {
+        "/v3/verified_senders/domains": {
             "get": {
                 "operationId": "GET_verified_senders-domains",
                 "summary": "Domain Warn List",
@@ -12685,7 +12685,7 @@
                 }
             }
         },
-        "/verified_senders/steps_completed": {
+        "/v3/verified_senders/steps_completed": {
             "get": {
                 "operationId": "GET_verified_senders-steps_completed",
                 "summary": "Completed Steps",
@@ -12752,7 +12752,7 @@
                 }
             }
         },
-        "/verified_senders": {
+        "/v3/verified_senders": {
             "post": {
                 "operationId": "POST_verified_senders",
                 "summary": "Create Verified Sender Request",
@@ -12964,7 +12964,7 @@
                 }
             }
         },
-        "/verified_senders/verify/{token}": {
+        "/v3/verified_senders/verify/{token}": {
             "parameters": [
                 {
                     "name": "token",
@@ -13041,7 +13041,7 @@
                 }
             }
         },
-        "/verified_senders/{id}": {
+        "/v3/verified_senders/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -13299,7 +13299,7 @@
                 }
             }
         },
-        "/verified_senders/resend/{id}": {
+        "/v3/verified_senders/resend/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -13408,7 +13408,7 @@
                 }
             }
         },
-        "/designs/{id}": {
+        "/v3/designs/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -13452,7 +13452,7 @@
                                 "html_content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html data-editor-version=\"2\" class=\"sg-campaigns\" xmlns=\"http://www.w3.org/1999/xhtml\">\n    <head>\n      <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1\">\n      <!--[if !mso]><!-->\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">\n      <!--<![endif]-->\n      <!--[if (gte mso 9)|(IE)]>\n      <xml>\n        <o:OfficeDocumentSettings>\n          <o:AllowPNG/>\n          <o:PixelsPerInch>96</o:PixelsPerInch>\n        </o:OfficeDocumentSettings>\n      </xml>\n      <![endif]-->\n      <!--[if (gte mso 9)|(IE)]>\n  <style type=\"text/css\">\n    body {width: 600px;margin: 0 auto;}\n    table {border-collapse: collapse;}\n    table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}\n    img {-ms-interpolation-mode: bicubic;}\n  </style>\n<![endif]-->\n      <style type=\"text/css\">\n    body, p, div {\n      font-family: arial,helvetica,sans-serif;\n      font-size: 14px;\n    }\n    body {\n      color: #000000;\n    }\n    body a {\n      color: #1188E6;\n      text-decoration: none;\n    }\n    p { margin: 0; padding: 0; }\n    table.wrapper {\n      width:100% !important;\n      table-layout: fixed;\n      -webkit-font-smoothing: antialiased;\n      -webkit-text-size-adjust: 100%;\n      -moz-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n    }\n    img.max-width {\n      max-width: 100% !important;\n    }\n    .column.of-2 {\n      width: 50%;\n    }\n    .column.of-3 {\n      width: 33.333%;\n    }\n    .column.of-4 {\n      width: 25%;\n    }\n    ul ul ul ul  {\n      list-style-type: disc !important;\n    }\n    ol ol {\n      list-style-type: lower-roman !important;\n    }\n    ol ol ol {\n      list-style-type: lower-latin !important;\n    }\n    ol ol ol ol {\n      list-style-type: decimal !important;\n    }\n    @media screen and (max-width:480px) {\n      .preheader .rightColumnContent,\n      .footer .rightColumnContent {\n        text-align: left !important;\n      }\n      .preheader .rightColumnContent div,\n      .preheader .rightColumnContent span,\n      .footer .rightColumnContent div,\n      .footer .rightColumnContent span {\n        text-align: left !important;\n      }\n      .preheader .rightColumnContent,\n      .preheader .leftColumnContent {\n        font-size: 80% !important;\n        padding: 5px 0;\n      }\n      table.wrapper-mobile {\n        width: 100% !important;\n        table-layout: fixed;\n      }\n      img.max-width {\n        height: auto !important;\n        max-width: 100% !important;\n      }\n      a.bulletproof-button {\n        display: block !important;\n        width: auto !important;\n        font-size: 80%;\n        padding-left: 0 !important;\n        padding-right: 0 !important;\n      }\n      .columns {\n        width: 100% !important;\n      }\n      .column {\n        display: block !important;\n        width: 100% !important;\n        padding-left: 0 !important;\n        padding-right: 0 !important;\n        margin-left: 0 !important;\n        margin-right: 0 !important;\n      }\n      .social-icon-column {\n        display: inline-block !important;\n      }\n    }\n  </style>\n      <!--user entered Head Start--><!--End Head user entered-->\n    </head>\n    <body>\n      <center class=\"wrapper\" data-link-color=\"#1188E6\" data-body-style=\"font-size:14px; font-family:arial,helvetica,sans-serif; color:#000000; background-color:#FFFFFF;\">\n        <div class=\"webkit\">\n          <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" class=\"wrapper\" bgcolor=\"#FFFFFF\">\n            <tr>\n              <td valign=\"top\" bgcolor=\"#FFFFFF\" width=\"100%\">\n                <table width=\"100%\" role=\"content-container\" class=\"outer\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                  <tr>\n                    <td width=\"100%\">\n                      <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n                        <tr>\n                          <td>\n                            <!--[if mso]>\n    <center>\n    <table><tr><td width=\"600\">\n  <![endif]-->\n                                    <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%; max-width:600px;\" align=\"center\">\n                                      <tr>\n                                        <td role=\"modules-container\" style=\"padding:0px 0px 0px 0px; color:#000000; text-align:left;\" bgcolor=\"#FFFFFF\" width=\"100%\" align=\"left\"><table class=\"module preheader preheader-hide\" role=\"module\" data-type=\"preheader\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;\">\n    <tr>\n      <td role=\"module-content\">\n        <p></p>\n      </td>\n    </tr>\n  </table><table class=\"module\" role=\"module\" data-type=\"text\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"table-layout: fixed;\" data-muid=\"41f90842-501c-4f08-96c9-17c0f74cb841\" data-mc-module-version=\"2019-10-22\">\n    <tbody>\n      <tr>\n        <td style=\"padding:18px 0px 18px 0px; line-height:22px; text-align:inherit;\" height=\"100%\" valign=\"top\" bgcolor=\"\" role=\"module-content\"><div><div style=\"font-family: inherit; text-align: inherit\">Ahoy, World!</div><div></div></div></td>\n      </tr>\n    </tbody>\n  </table><div data-role=\"module-unsubscribe\" class=\"module\" role=\"module\" data-type=\"unsubscribe\" style=\"color:#444444; font-size:12px; line-height:20px; padding:16px 16px 16px 16px; text-align:Center;\" data-muid=\"4e838cf3-9892-4a6d-94d6-170e474d21e5\"><div class=\"Unsubscribe--addressLine\"><p class=\"Unsubscribe--senderName\" style=\"font-size:12px; line-height:20px;\">{{Sender_Name}}</p><p style=\"font-size:12px; line-height:20px;\"><span class=\"Unsubscribe--senderAddress\">{{Sender_Address}}</span>, <span class=\"Unsubscribe--senderCity\">{{Sender_City}}</span>, <span class=\"Unsubscribe--senderState\">{{Sender_State}}</span> <span class=\"Unsubscribe--senderZip\">{{Sender_Zip}}</span></p></div><p style=\"font-size:12px; line-height:20px;\"><a class=\"Unsubscribe--unsubscribeLink\" href=\"{{{unsubscribe}}}\" target=\"_blank\" style=\"\">Unsubscribe</a> - <a href=\"{{{unsubscribe_preferences}}}\" target=\"_blank\" class=\"Unsubscribe--unsubscribePreferences\" style=\"\">Unsubscribe Preferences</a></p></div></td>\n                                      </tr>\n                                    </table>\n                                    <!--[if mso]>\n                                  </td>\n                                </tr>\n                              </table>\n                            </center>\n                            <![endif]-->\n                          </td>\n                        </tr>\n                      </table>\n                    </td>\n                  </tr>\n                </table>\n              </td>\n            </tr>\n          </table>\n        </div>\n      </center>\n    </body>\n  </html>",
                                 "plain_content": "Ahoy, World!\n\n{{Sender_Name}}\n\n{{Sender_Address}} , {{Sender_City}} , {{Sender_State}} {{Sender_Zip}}\n\nUnsubscribe ( {{{unsubscribe}}} ) - Unsubscribe Preferences ( {{{unsubscribe_preferences}}} )",
                                 "generate_plain_content": false,
-                                "thumbnail_url": "//us-east-2-production-thumbnail-bucket.s3.amazonaws.com/79bb769ae6464960a307040120ad6f9921896fe9825e845ad1f24d12285ea068.png",
+                                "thumbnail_url": "/v3//us-east-2-production-thumbnail-bucket.s3.amazonaws.com/79bb769ae6464960a307040120ad6f9921896fe9825e845ad1f24d12285ea068.png",
                                 "subject": "Getting Started",
                                 "created_at": "2021-04-30T19:00:16Z",
                                 "updated_at": "2021-04-30T19:00:16Z",
@@ -13712,7 +13712,7 @@
                 }
             }
         },
-        "/designs": {
+        "/v3/designs": {
             "post": {
                 "operationId": "POST-design",
                 "summary": "Create Design",
@@ -13886,7 +13886,7 @@
                 }
             }
         },
-        "/designs/pre-builts/{id}": {
+        "/v3/designs/pre-builts/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -14029,7 +14029,7 @@
                 }
             }
         },
-        "/designs/pre-builts": {
+        "/v3/designs/pre-builts": {
             "get": {
                 "operationId": "LIST-Sendgrid-Pre-built-designs",
                 "summary": "List SendGrid Pre-built Designs",
@@ -14161,7 +14161,7 @@
                 }
             }
         },
-        "/marketing/contacts": {
+        "/v3/marketing/contacts": {
             "put": {
                 "operationId": "PUT_mc-contacts",
                 "summary": "Add or Update a Contact",
@@ -14420,7 +14420,7 @@
                 }
             }
         },
-        "/marketing/contacts/count": {
+        "/v3/marketing/contacts/count": {
             "get": {
                 "operationId": "GET_mc-contacts-count",
                 "summary": "Get Total Contact Count",
@@ -14496,7 +14496,7 @@
                 }
             }
         },
-        "/marketing/contacts/exports": {
+        "/v3/marketing/contacts/exports": {
             "post": {
                 "operationId": "POST_mc-contacts-exports",
                 "summary": "Export Contacts",
@@ -14791,7 +14791,7 @@
                 }
             }
         },
-        "/marketing/contacts/{id}": {
+        "/v3/marketing/contacts/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -14845,7 +14845,7 @@
                 }
             }
         },
-        "/marketing/contacts/search": {
+        "/v3/marketing/contacts/search": {
             "post": {
                 "operationId": "POST_mc-contacts-search",
                 "summary": "Search Contacts",
@@ -14971,7 +14971,7 @@
                 }
             }
         },
-        "/marketing/contacts/imports": {
+        "/v3/marketing/contacts/imports": {
             "put": {
                 "operationId": "PUT_mc-contacts-imports",
                 "summary": "Import Contacts",
@@ -15125,7 +15125,7 @@
                 }
             }
         },
-        "/marketing/contacts/imports/{id}": {
+        "/v3/marketing/contacts/imports/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -15190,7 +15190,7 @@
                 }
             }
         },
-        "/marketing/contacts/exports/{id}": {
+        "/v3/marketing/contacts/exports/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -15258,7 +15258,7 @@
                 }
             }
         },
-        "/marketing/contacts/batch": {
+        "/v3/marketing/contacts/batch": {
             "post": {
                 "operationId": "POST_marketing-contacts-batch",
                 "summary": "Get Batched Contacts by IDs",
@@ -15338,7 +15338,7 @@
                 }
             }
         },
-        "/marketing/contacts/search/emails": {
+        "/v3/marketing/contacts/search/emails": {
             "post": {
                 "operationId": "POST_marketing-contacts-search-emails",
                 "summary": "Get Contacts by Emails",
@@ -15526,7 +15526,7 @@
                 }
             }
         },
-        "/segments/2.0": {
+        "/v3/segments/2.0": {
             "post": {
                 "operationId": "POST_segments",
                 "summary": "Create Segment",
@@ -15651,7 +15651,7 @@
                 }
             }
         },
-        "/segments/2.0/{segment_id}": {
+        "/v3/segments/2.0/{segment_id}": {
             "parameters": [
                 {
                     "name": "segment_id",
@@ -15813,7 +15813,7 @@
                 }
             }
         },
-        "/marketing/senders": {
+        "/v3/marketing/senders": {
             "post": {
                 "operationId": "POST_marketing-senders",
                 "summary": "Create a Sender Identity",
@@ -15958,7 +15958,7 @@
                 }
             }
         },
-        "/marketing/lists": {
+        "/v3/marketing/lists": {
             "post": {
                 "operationId": "POST_mc-lists",
                 "summary": "Create List",
@@ -16117,7 +16117,7 @@
                 }
             }
         },
-        "/marketing/lists/{id}/contacts/count": {
+        "/v3/marketing/lists/{id}/contacts/count": {
             "parameters": [
                 {
                     "name": "id",
@@ -16179,7 +16179,7 @@
                 }
             }
         },
-        "/marketing/lists/{id}": {
+        "/v3/marketing/lists/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -16427,7 +16427,7 @@
                 }
             }
         },
-        "/marketing/lists/{id}/contacts": {
+        "/v3/marketing/lists/{id}/contacts": {
             "parameters": [
                 {
                     "name": "id",
@@ -16498,7 +16498,7 @@
                 }
             }
         },
-        "/marketing/field_definitions": {
+        "/v3/marketing/field_definitions": {
             "post": {
                 "operationId": "POST_mc-field_definitions",
                 "summary": "Create Custom Field Definition",
@@ -16806,7 +16806,7 @@
                 }
             }
         },
-        "/marketing/field_definitions/{custom_field_id}": {
+        "/v3/marketing/field_definitions/{custom_field_id}": {
             "parameters": [
                 {
                     "name": "custom_field_id",
@@ -16975,7 +16975,7 @@
                 }
             }
         },
-        "/marketing/segments": {
+        "/v3/marketing/segments": {
             "post": {
                 "operationId": "POST_marketing-segments",
                 "summary": "Create Segment",
@@ -17219,7 +17219,7 @@
                 }
             }
         },
-        "/marketing/segments/{segment_id}": {
+        "/v3/marketing/segments/{segment_id}": {
             "parameters": [
                 {
                     "name": "segment_id",
@@ -17710,7 +17710,7 @@
                 }
             }
         },
-        "/marketing/segments/delete": {
+        "/v3/marketing/segments/delete": {
             "post": {
                 "operationId": "POST_marketing-segments-delete",
                 "summary": "Bulk Delete Segments",
@@ -17846,7 +17846,7 @@
                 }
             }
         },
-        "/marketing/singlesends": {
+        "/v3/marketing/singlesends": {
             "post": {
                 "operationId": "POST_marketing-singlesends",
                 "summary": "Create Single Send",
@@ -18154,7 +18154,7 @@
                 }
             }
         },
-        "/marketing/singlesends/{id}": {
+        "/v3/marketing/singlesends/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -18555,7 +18555,7 @@
                 }
             }
         },
-        "/marketing/singlesends/search": {
+        "/v3/marketing/singlesends/search": {
             "post": {
                 "operationId": "POST_marketing-singlesends-search",
                 "summary": "Get Single Sends Search",
@@ -18678,7 +18678,7 @@
                 }
             }
         },
-        "/marketing/singlesends/{id}/schedule": {
+        "/v3/marketing/singlesends/{id}/schedule": {
             "parameters": [
                 {
                     "name": "id",
@@ -18896,7 +18896,7 @@
                 }
             }
         },
-        "/marketing/singlesends/categories": {
+        "/v3/marketing/singlesends/categories": {
             "get": {
                 "operationId": "GET_marketing-singlesends-categories",
                 "summary": "Get All Categories",
@@ -18975,7 +18975,7 @@
                 }
             }
         },
-        "/marketing/test/send_email": {
+        "/v3/marketing/test/send_email": {
             "post": {
                 "operationId": "POST_marketing-test-send_email",
                 "summary": "Send a Test Marketing Email",
@@ -19076,7 +19076,7 @@
                 }
             }
         },
-        "/marketing/stats/automations": {
+        "/v3/marketing/stats/automations": {
             "get": {
                 "operationId": "getall-automation-stats",
                 "summary": "Get All Automation Stats",
@@ -19135,7 +19135,7 @@
                 }
             }
         },
-        "/marketing/stats/automations/{id}": {
+        "/v3/marketing/stats/automations/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -19209,7 +19209,7 @@
                 }
             }
         },
-        "/marketing/stats/singlesends": {
+        "/v3/marketing/stats/singlesends": {
             "get": {
                 "operationId": "getall-singlesend-stats",
                 "summary": "Get All Single Sends Stats",
@@ -19265,7 +19265,7 @@
                 }
             }
         },
-        "/marketing/stats/singlesends/{id}": {
+        "/v3/marketing/stats/singlesends/{id}": {
             "parameters": [
                 {
                     "name": "id",
@@ -19336,7 +19336,7 @@
                 }
             }
         },
-        "/marketing/stats/automations/{id}/links": {
+        "/v3/marketing/stats/automations/{id}/links": {
             "parameters": [
                 {
                     "name": "id",
@@ -19403,7 +19403,7 @@
                 }
             }
         },
-        "/marketing/stats/singlesends/{id}/links": {
+        "/v3/marketing/stats/singlesends/{id}/links": {
             "parameters": [
                 {
                     "name": "id",
@@ -19471,7 +19471,7 @@
                 }
             }
         },
-        "/marketing/stats/singlesends/export": {
+        "/v3/marketing/stats/singlesends/export": {
             "get": {
                 "operationId": "get-singlesend-stats-export",
                 "summary": "Export Single Send Stats",
@@ -19529,7 +19529,7 @@
                 }
             }
         },
-        "/marketing/stats/automations/export": {
+        "/v3/marketing/stats/automations/export": {
             "get": {
                 "operationId": "get-automations-stats-export",
                 "summary": "Export Automation Stats",
@@ -19590,7 +19590,7 @@
                 }
             }
         },
-        "/senders": {
+        "/v3/senders": {
             "post": {
                 "operationId": "POST_senders",
                 "summary": "Create a Sender Identity",
@@ -19853,7 +19853,7 @@
                 }
             }
         },
-        "/senders/{sender_id}": {
+        "/v3/senders/{sender_id}": {
             "parameters": [
                 {
                     "name": "sender_id",
@@ -20280,7 +20280,7 @@
                 }
             }
         },
-        "/senders/{sender_id}/resend_verification": {
+        "/v3/senders/{sender_id}/resend_verification": {
             "parameters": [
                 {
                     "name": "sender_id",
@@ -20393,7 +20393,7 @@
                 }
             }
         },
-        "/contactdb/lists": {
+        "/v3/contactdb/lists": {
             "post": {
                 "operationId": "POST_contactdb-lists",
                 "summary": "Create a List",
@@ -20643,7 +20643,7 @@
                 }
             }
         },
-        "/contactdb/lists/{list_id}": {
+        "/v3/contactdb/lists/{list_id}": {
             "parameters": [
                 {
                     "name": "list_id",
@@ -20970,7 +20970,7 @@
                 }
             }
         },
-        "/contactdb/lists/{list_id}/recipients": {
+        "/v3/contactdb/lists/{list_id}/recipients": {
             "parameters": [
                 {
                     "name": "list_id",
@@ -21259,7 +21259,7 @@
                 }
             }
         },
-        "/contactdb/lists/{list_id}/recipients/{recipient_id}": {
+        "/v3/contactdb/lists/{list_id}/recipients/{recipient_id}": {
             "parameters": [
                 {
                     "name": "list_id",
@@ -21484,7 +21484,7 @@
                 }
             }
         },
-        "/contactdb/recipients": {
+        "/v3/contactdb/recipients": {
             "post": {
                 "operationId": "POST_contactdb-recipients",
                 "summary": "Add recipients",
@@ -21890,7 +21890,7 @@
                 }
             }
         },
-        "/contactdb/status": {
+        "/v3/contactdb/status": {
             "get": {
                 "operationId": "GET_contactdb-status",
                 "summary": "Get Recipient Upload Status",
@@ -21966,7 +21966,7 @@
                 }
             }
         },
-        "/contactdb/recipients/{recipient_id}": {
+        "/v3/contactdb/recipients/{recipient_id}": {
             "parameters": [
                 {
                     "name": "recipient_id",
@@ -22127,7 +22127,7 @@
                 }
             }
         },
-        "/contactdb/recipients/{recipient_id}/lists": {
+        "/v3/contactdb/recipients/{recipient_id}/lists": {
             "parameters": [
                 {
                     "name": "recipient_id",
@@ -22242,7 +22242,7 @@
                 }
             }
         },
-        "/contactdb/recipients/billable_count": {
+        "/v3/contactdb/recipients/billable_count": {
             "get": {
                 "operationId": "GET_contactdb-recipients-billable_count",
                 "summary": "Retrieve the count of billable recipients",
@@ -22302,7 +22302,7 @@
                 }
             }
         },
-        "/contactdb/recipients/count": {
+        "/v3/contactdb/recipients/count": {
             "get": {
                 "operationId": "GET_contactdb-recipients-count",
                 "summary": "Retrieve a Count of Recipients",
@@ -22362,7 +22362,7 @@
                 }
             }
         },
-        "/contactdb/recipients/search": {
+        "/v3/contactdb/recipients/search": {
             "get": {
                 "operationId": "GET_contactdb-recipients-search",
                 "summary": "Search recipients",
@@ -22686,7 +22686,7 @@
                 }
             }
         },
-        "/contactdb/custom_fields": {
+        "/v3/contactdb/custom_fields": {
             "post": {
                 "operationId": "POST_contactdb-custom_fields",
                 "summary": "Create a Custom Field",
@@ -22876,7 +22876,7 @@
                 }
             }
         },
-        "/contactdb/custom_fields/{custom_field_id}": {
+        "/v3/contactdb/custom_fields/{custom_field_id}": {
             "parameters": [
                 {
                     "name": "custom_field_id",
@@ -23068,7 +23068,7 @@
                 }
             }
         },
-        "/contactdb/reserved_fields": {
+        "/v3/contactdb/reserved_fields": {
             "get": {
                 "operationId": "GET_contactdb-reserved_fields",
                 "summary": "Retrieve reserved fields",
@@ -23189,7 +23189,7 @@
                 }
             }
         },
-        "/contactdb/segments": {
+        "/v3/contactdb/segments": {
             "post": {
                 "operationId": "POST_contactdb-segments",
                 "summary": "Create a Segment",
@@ -23452,7 +23452,7 @@
                 }
             }
         },
-        "/contactdb/segments/{segment_id}": {
+        "/v3/contactdb/segments/{segment_id}": {
             "parameters": [
                 {
                     "name": "segment_id",
@@ -23841,7 +23841,7 @@
                 }
             }
         },
-        "/contactdb/segments/{segment_id}/recipients": {
+        "/v3/contactdb/segments/{segment_id}/recipients": {
             "parameters": [
                 {
                     "name": "segment_id",
@@ -23964,7 +23964,7 @@
                 }
             }
         },
-        "/categories": {
+        "/v3/categories": {
             "get": {
                 "operationId": "GET_categories",
                 "summary": "Retrieve all categories",
@@ -24083,7 +24083,7 @@
                 }
             }
         },
-        "/categories/stats/sums": {
+        "/v3/categories/stats/sums": {
             "get": {
                 "operationId": "GET_categories-stats-sums",
                 "summary": "Retrieve sums of email stats for each category [Needs: Stats object defined, has category ID?]",
@@ -24301,7 +24301,7 @@
                 }
             }
         },
-        "/categories/stats": {
+        "/v3/categories/stats": {
             "get": {
                 "operationId": "GET_categories-stats",
                 "summary": "Retrieve Email Statistics for Categories",
@@ -24494,7 +24494,7 @@
                 }
             }
         },
-        "/campaigns": {
+        "/v3/campaigns": {
             "post": {
                 "operationId": "POST_campaigns",
                 "summary": "Create a Campaign",
@@ -24767,7 +24767,7 @@
                 }
             }
         },
-        "/campaigns/{campaign_id}": {
+        "/v3/campaigns/{campaign_id}": {
             "parameters": [
                 {
                     "name": "campaign_id",
@@ -25201,7 +25201,7 @@
                 }
             }
         },
-        "/campaigns/{campaign_id}/schedules/now": {
+        "/v3/campaigns/{campaign_id}/schedules/now": {
             "parameters": [
                 {
                     "name": "campaign_id",
@@ -25356,7 +25356,7 @@
                 }
             }
         },
-        "/campaigns/{campaign_id}/schedules": {
+        "/v3/campaigns/{campaign_id}/schedules": {
             "parameters": [
                 {
                     "name": "campaign_id",
@@ -25823,7 +25823,7 @@
                 }
             }
         },
-        "/campaigns/{campaign_id}/schedules/test": {
+        "/v3/campaigns/{campaign_id}/schedules/test": {
             "parameters": [
                 {
                     "name": "campaign_id",
@@ -25939,7 +25939,7 @@
                 }
             }
         },
-        "/templates": {
+        "/v3/templates": {
             "post": {
                 "operationId": "POST_templates",
                 "summary": "Create a transactional template.",
@@ -26136,7 +26136,7 @@
                 }
             }
         },
-        "/templates/{template_id}": {
+        "/v3/templates/{template_id}": {
             "parameters": [
                 {
                     "name": "template_id",
@@ -26353,7 +26353,7 @@
                 }
             }
         },
-        "/templates/{template_id}/versions": {
+        "/v3/templates/{template_id}/versions": {
             "parameters": [
                 {
                     "name": "template_id",
@@ -26431,7 +26431,7 @@
                 }
             }
         },
-        "/templates/{template_id}/versions/{version_id}/activate": {
+        "/v3/templates/{template_id}/versions/{version_id}/activate": {
             "parameters": [
                 {
                     "name": "template_id",
@@ -26502,7 +26502,7 @@
                 }
             }
         },
-        "/templates/{template_id}/versions/{version_id}": {
+        "/v3/templates/{template_id}/versions/{version_id}": {
             "parameters": [
                 {
                     "name": "template_id",
@@ -26672,7 +26672,7 @@
                 }
             }
         },
-        "/user/webhooks/event/settings": {
+        "/v3/user/webhooks/event/settings": {
             "get": {
                 "operationId": "GET_user-webhooks-event-settings",
                 "summary": "Retrieve Event Webhook settings",
@@ -26811,7 +26811,7 @@
                 }
             }
         },
-        "/user/webhooks/parse/settings": {
+        "/v3/user/webhooks/parse/settings": {
             "get": {
                 "operationId": "GET_user-webhooks-parse-settings",
                 "summary": "Retrieve all parse settings",
@@ -26953,7 +26953,7 @@
                 }
             }
         },
-        "/user/webhooks/parse/stats": {
+        "/v3/user/webhooks/parse/stats": {
             "get": {
                 "operationId": "GET_user-webhooks-parse-stats",
                 "summary": "Retrieves Inbound Parse Webhook statistics.",
@@ -27381,7 +27381,7 @@
                 }
             }
         },
-        "/user/webhooks/event/settings/signed": {
+        "/v3/user/webhooks/event/settings/signed": {
             "get": {
                 "operationId": "GET_user-webhooks-event-settings-signed",
                 "summary": "Retrieve Signed Webhook Public Key",
@@ -27646,7 +27646,7 @@
                 }
             }
         },
-        "/user/webhooks/event/test": {
+        "/v3/user/webhooks/event/test": {
             "post": {
                 "operationId": "POST_user-webhooks-event-test",
                 "summary": "Test Event Notification Settings",
@@ -27713,7 +27713,7 @@
                 }
             }
         },
-        "/messages": {
+        "/v3/messages": {
             "get": {
                 "operationId": "GET-messages",
                 "summary": "Filter all messages",
@@ -27966,7 +27966,7 @@
                 }
             }
         },
-        "/messages/{msg_id}": {
+        "/v3/messages/{msg_id}": {
             "parameters": [
                 {
                     "name": "msg_id",
@@ -28515,7 +28515,7 @@
                 ]
             }
         },
-        "/messages/download": {
+        "/v3/messages/download": {
             "post": {
                 "operationId": "POST_v3-messages-download",
                 "summary": "Request CSV",
@@ -28664,7 +28664,7 @@
                 }
             }
         },
-        "/messages/download/{download_uuid}": {
+        "/v3/messages/download/{download_uuid}": {
             "parameters": [
                 {
                     "name": "download_uuid",
@@ -28793,7 +28793,7 @@
                 ]
             }
         },
-        "/tracking_settings": {
+        "/v3/tracking_settings": {
             "get": {
                 "operationId": "GET_tracking_settings",
                 "summary": "Retrieve Tracking Settings",
@@ -28871,7 +28871,7 @@
                 }
             }
         },
-        "/tracking_settings/click": {
+        "/v3/tracking_settings/click": {
             "get": {
                 "operationId": "GET_tracking_settings-click",
                 "summary": "Retrieve Click Track Settings",
@@ -28975,7 +28975,7 @@
                 }
             }
         },
-        "/tracking_settings/google_analytics": {
+        "/v3/tracking_settings/google_analytics": {
             "get": {
                 "operationId": "GET_tracking_settings-google_analytics",
                 "summary": "Retrieve Google Analytics Settings",
@@ -29086,7 +29086,7 @@
                 }
             }
         },
-        "/tracking_settings/open": {
+        "/v3/tracking_settings/open": {
             "get": {
                 "operationId": "GET_tracking_settings-open",
                 "summary": "Get Open Tracking Settings",
@@ -29206,7 +29206,7 @@
                 }
             }
         },
-        "/tracking_settings/subscription": {
+        "/v3/tracking_settings/subscription": {
             "get": {
                 "operationId": "GET_tracking_settings-subscription",
                 "summary": "Retrieve Subscription Tracking Settings",
@@ -29317,7 +29317,7 @@
                 }
             }
         },
-        "/stats": {
+        "/v3/stats": {
             "get": {
                 "operationId": "GET_stats",
                 "summary": "Retrieve global email statistics",
@@ -29575,7 +29575,7 @@
                 }
             }
         },
-        "/geo/stats": {
+        "/v3/geo/stats": {
             "get": {
                 "operationId": "GET_geo-stats",
                 "summary": "Retrieve email statistics by country and state/province.",
@@ -30132,7 +30132,7 @@
                 }
             }
         },
-        "/devices/stats": {
+        "/v3/devices/stats": {
             "get": {
                 "operationId": "GET_devices-stats",
                 "summary": "Retrieve email statistics by device type.",
@@ -30622,7 +30622,7 @@
                 }
             }
         },
-        "/clients/stats": {
+        "/v3/clients/stats": {
             "get": {
                 "operationId": "GET_clients-stats",
                 "summary": "Retrieve email statistics by client type.",
@@ -30729,7 +30729,7 @@
                 }
             }
         },
-        "/clients/{client_type}/stats": {
+        "/v3/clients/{client_type}/stats": {
             "parameters": [
                 {
                     "name": "client_type",
@@ -30851,7 +30851,7 @@
                 }
             }
         },
-        "/mailbox_providers/stats": {
+        "/v3/mailbox_providers/stats": {
             "get": {
                 "operationId": "GET_mailbox_providers-stats",
                 "summary": "Retrieve email statistics by mailbox provider.",
@@ -31655,7 +31655,7 @@
                 }
             }
         },
-        "/browsers/stats": {
+        "/v3/browsers/stats": {
             "get": {
                 "operationId": "GET_browsers-stats",
                 "summary": "Retrieve email statistics by browser.",
@@ -31790,7 +31790,7 @@
                 }
             }
         },
-        "/suppression/bounces": {
+        "/v3/suppression/bounces": {
             "get": {
                 "operationId": "GET_suppression-bounces",
                 "summary": "Retrieve all bounces",
@@ -31953,7 +31953,7 @@
                 }
             }
         },
-        "/suppression/bounces/{email}": {
+        "/v3/suppression/bounces/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -32081,7 +32081,7 @@
                 }
             }
         },
-        "/suppression/blocks": {
+        "/v3/suppression/blocks": {
             "get": {
                 "operationId": "GET_suppression-blocks",
                 "summary": "Retrieve all blocks",
@@ -32225,7 +32225,7 @@
                 }
             }
         },
-        "/suppression/blocks/{email}": {
+        "/v3/suppression/blocks/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -32322,7 +32322,7 @@
                 }
             }
         },
-        "/suppression/spam_reports": {
+        "/v3/suppression/spam_reports": {
             "get": {
                 "operationId": "GET_suppression-spam_reports",
                 "summary": "Retrieve all spam reports",
@@ -32464,7 +32464,7 @@
                 }
             }
         },
-        "/suppression/spam_reports/{email}": {
+        "/v3/suppression/spam_reports/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -32560,7 +32560,7 @@
                 }
             }
         },
-        "/asm/suppressions/global": {
+        "/v3/asm/suppressions/global": {
             "post": {
                 "operationId": "POST_asm-suppressions-global",
                 "summary": "Add recipient addresses to the global suppression group.",
@@ -32633,7 +32633,7 @@
                 }
             }
         },
-        "/suppression/unsubscribes": {
+        "/v3/suppression/unsubscribes": {
             "get": {
                 "operationId": "GET_suppression-unsubscribes",
                 "summary": "Retrieve all global suppressions",
@@ -32726,7 +32726,7 @@
                 }
             }
         },
-        "/asm/suppressions/global/{email}": {
+        "/v3/asm/suppressions/global/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -32827,7 +32827,7 @@
                 }
             }
         },
-        "/asm/groups": {
+        "/v3/asm/groups": {
             "post": {
                 "operationId": "POST_asm-groups",
                 "summary": "Create a new suppression group",
@@ -32975,7 +32975,7 @@
                 }
             }
         },
-        "/asm/groups/{group_id}": {
+        "/v3/asm/groups/{group_id}": {
             "parameters": [
                 {
                     "name": "group_id",
@@ -33156,7 +33156,7 @@
                 }
             }
         },
-        "/asm/groups/{group_id}/suppressions": {
+        "/v3/asm/groups/{group_id}/suppressions": {
             "parameters": [
                 {
                     "name": "group_id",
@@ -33283,7 +33283,7 @@
                 }
             }
         },
-        "/asm/groups/{group_id}/suppressions/search": {
+        "/v3/asm/groups/{group_id}/suppressions/search": {
             "parameters": [
                 {
                     "name": "group_id",
@@ -33356,7 +33356,7 @@
                 }
             }
         },
-        "/asm/suppressions": {
+        "/v3/asm/suppressions": {
             "get": {
                 "operationId": "GET_asm-suppressions",
                 "summary": "Retrieve all suppressions",
@@ -33444,7 +33444,7 @@
                 }
             }
         },
-        "/asm/suppressions/{email}": {
+        "/v3/asm/suppressions/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -33560,7 +33560,7 @@
                 }
             }
         },
-        "/asm/groups/{group_id}/suppressions/{email}": {
+        "/v3/asm/groups/{group_id}/suppressions/{email}": {
             "parameters": [
                 {
                     "name": "group_id",
@@ -33615,7 +33615,7 @@
                 }
             }
         },
-        "/suppression/invalid_emails": {
+        "/v3/suppression/invalid_emails": {
             "get": {
                 "operationId": "GET_suppression-invalid_emails",
                 "summary": "Retrieve all invalid emails",
@@ -33762,7 +33762,7 @@
                 }
             }
         },
-        "/suppression/invalid_emails/{email}": {
+        "/v3/suppression/invalid_emails/{email}": {
             "parameters": [
                 {
                     "name": "email",
@@ -33863,7 +33863,7 @@
                 }
             }
         },
-        "/user/webhooks/parse/settings/{hostname}": {
+        "/v3/user/webhooks/parse/settings/{hostname}": {
             "parameters": [
                 {
                     "name": "hostname",
@@ -44743,7 +44743,7 @@
                         },
                         "authentication": {},
                         "method": "post",
-                        "url": "/alerts",
+                        "url": "/v3/alerts",
                         "headers": [
                             {
                                 "value": "Bearer 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",
@@ -44778,7 +44778,7 @@
                     "capture": {},
                     "request": {
                         "method": "get",
-                        "url": "/alerts/{alert_id}",
+                        "url": "/v3/alerts/{alert_id}",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -44816,7 +44816,7 @@
                     "capture": {},
                     "request": {
                         "method": "patch",
-                        "url": "/alerts/{alert_id}",
+                        "url": "/v3/alerts/{alert_id}",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -44858,7 +44858,7 @@
                     "capture": {},
                     "request": {
                         "method": "delete",
-                        "url": "/alerts/{alert_id}",
+                        "url": "/v3/alerts/{alert_id}",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -44897,7 +44897,7 @@
                     "request": {
                         "authentication": {},
                         "method": "post",
-                        "url": "/alerts",
+                        "url": "/v3/alerts",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -44952,7 +44952,7 @@
                     },
                     "request": {
                         "method": "post",
-                        "url": "/user/webhooks/parse/settings",
+                        "url": "/v3/user/webhooks/parse/settings",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -44994,7 +44994,7 @@
                     "capture": {},
                     "request": {
                         "method": "get",
-                        "url": "/user/webhooks/parse/settings",
+                        "url": "/v3/user/webhooks/parse/settings",
                         "headers": [
                             {
                                 "value": "Bearer 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",
@@ -45034,7 +45034,7 @@
                         "postData": {},
                         "authentication": {},
                         "method": "get",
-                        "url": "/user/webhooks/parse/settings/{hostname}",
+                        "url": "/v3/user/webhooks/parse/settings/{hostname}",
                         "headers": [
                             {
                                 "value": "Bearer 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",
@@ -45070,7 +45070,7 @@
                     "capture": {},
                     "request": {
                         "method": "patch",
-                        "url": "/user/webhooks/parse/settings/{hostname}/",
+                        "url": "/v3/user/webhooks/parse/settings/{hostname}/",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -45111,7 +45111,7 @@
                     "afterScript": "function (ctx, request, response) {\n  // Your javascript code here.\n  // Code completion enabled.\n  // You have access to a global \"SL\" object.\n  // \"url\": \"http://newdomain.com/parse\",\n  // \"spam_check\": false,\n  // \"send_raw\": true\n  var body = response.body.get();\n  assert.equal(body.url, \"http://newdomain.com/parse\");\n  assert.equal(body.spam_check, false);\n  assert.equal(body.send_raw, true);\n}",
                     "capture": {},
                     "request": {
-                        "url": "/user/webhooks/parse/settings/{hostname}",
+                        "url": "/v3/user/webhooks/parse/settings/{hostname}",
                         "headers": [
                             {
                                 "name": "Authorization",
@@ -45156,7 +45156,7 @@
                         },
                         "authentication": {},
                         "method": "delete",
-                        "url": "/user/webhooks/parse/settings/{hostname}",
+                        "url": "/v3/user/webhooks/parse/settings/{hostname}",
                         "headers": [
                             {
                                 "value": "Bearer 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",
